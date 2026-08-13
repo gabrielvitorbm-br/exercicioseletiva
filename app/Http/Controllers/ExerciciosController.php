@@ -50,5 +50,18 @@ class ExerciciosController extends Controller
         return view('exer3', ['mult' => $mult]);
     
 }
+    public function abrirFormExer4(){
+        return view('exer4');
+    }
 
+    public function respostaExer4(Request $request){
+
+        $valor1 = $request->valor1;
+        $valor2 = $request->valor2;
+
+        $div = $valor1 / $valor2;
+
+        return view('exer4', ['div' => $div]);
+    
+}
 }
