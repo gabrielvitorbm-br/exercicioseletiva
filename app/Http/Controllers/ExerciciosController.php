@@ -287,7 +287,21 @@ public function abrirFormExer18(){
         return view('exer18', ['mon' => $mon]);
 
     }
+public function abrirFormExer19(){
+        return view('exer19');
+    }
 
+    public function respostaExer19(Request $request){
+
+        $valor1 = $request->valor1;
+        
+        $hor = $valor1 * 24;
+        $min = $hor * 60;
+        $seg = $min * 60;      
+
+        return view('exer19', ['hor' => $hor, 'min' => $min, 'seg' => $seg]);
+
+    }
 
 
 
