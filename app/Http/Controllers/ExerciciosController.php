@@ -271,6 +271,23 @@ public function abrirFormExer17(){
 
     }
 
+public function abrirFormExer18(){
+        return view('exer18');
+    }
+
+    public function respostaExer18(Request $request){
+
+        $valor1 = $request->valor1;
+        $valor2 = $request->valor2;
+        $valor3 = $request->valor3;
+        
+      
+       $mon = $valor1 * ((1 + ($valor2 / 100)) ** $valor3);      
+
+        return view('exer18', ['mon' => $mon]);
+
+    }
+
 
 
 
