@@ -224,8 +224,21 @@ public function abrirFormExer13(){
         return view('exer14', ['mil' => $mil]);
     
 }
+public function abrirFormExer15(){
+        return view('exer15');
+    }
 
+    public function respostaExer15(Request $request){
 
+        $valor1 = $request->valor1;
+        $valor2 = $request->valor2;
+               
+
+        $imc = $valor1 / ($valor2 ** 2) ; 
+
+        return view('exer15', ['imc' => $imc]);
+
+    }
 
 
 
