@@ -161,6 +161,21 @@ public function abrirFormExer10(){
 
     }
 
+public function abrirFormExer11(){
+        return view('exer11');
+    }
+
+    public function respostaExer11(Request $request){
+
+        $valor1 = $request->valor1;
+        
+               
+
+        $per = 2 * 3.14 * $valor1 ;
+
+        return view('exer11', ['per' => $per]);
+    
+}
 
 
 
