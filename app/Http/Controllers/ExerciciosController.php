@@ -239,7 +239,21 @@ public function abrirFormExer15(){
         return view('exer15', ['imc' => $imc]);
 
     }
+public function abrirFormExer16(){
+        return view('exer16');
+    }
 
+    public function respostaExer16(Request $request){
+
+        $valor1 = $request->valor1;
+        $valor2 = $request->valor2;
+               
+
+        $des = $valor1 - ($valor1 * ($valor2 /100 )) ; 
+
+        return view('exer16', ['des' => $des]);
+
+    }
 
 
 
