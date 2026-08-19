@@ -303,23 +303,18 @@ public function abrirFormExer19(){
 
     }
 
+public function abrirFormExer20(){
+        return view('exer20');
+    }
 
+    public function respostaExer20(Request $request){
 
+        $valor1 = $request->valor1;
+        $valor2 = $request->valor2;
+        
+        $vel = $valor1 / $valor2;
 
+        return view('exer20', ['vel' => $vel ]);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 }
