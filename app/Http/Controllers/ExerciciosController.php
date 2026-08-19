@@ -83,7 +83,20 @@ class ExerciciosController extends Controller
     
 }
 
+public function abrirFormExer6(){
+        return view('exer6');
+    }
 
+    public function respostaExer6(Request $request){
+
+        $valor1 = $request->valor1;
+               
+
+        $fah = ( $valor1 * 1.8 ) + 32 ;
+
+        return view('exer6', ['fah' => $fah]);
+    
+}
 
 
 
