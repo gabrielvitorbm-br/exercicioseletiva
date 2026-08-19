@@ -113,6 +113,22 @@ public function abrirFormExer7(){
     
 }
 
+public function abrirFormExer8(){
+        return view('exer8');
+    }
+
+    public function respostaExer8(Request $request){
+
+        $valor1 = $request->valor1;
+        $valor2 = $request->valor2;
+               
+
+        $are = $valor1 * $valor2; 
+
+        return view('exer8', ['are' => $are]);
+    
+}
+
 
 
 
