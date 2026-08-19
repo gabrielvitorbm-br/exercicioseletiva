@@ -145,6 +145,22 @@ public function abrirFormExer9(){
     
 }
 
+public function abrirFormExer10(){
+        return view('exer10');
+    }
+
+    public function respostaExer10(Request $request){
+
+        $valor1 = $request->valor1;
+        $valor2 = $request->valor2;
+               
+
+        $per = 2 *( $valor1 + $valor2) ; 
+
+        return view('exer10', ['per' => $per]);
+
+    }
+
 
 
 
