@@ -98,6 +98,20 @@ public function abrirFormExer6(){
     
 }
 
+public function abrirFormExer7(){
+        return view('exer7');
+    }
+
+    public function respostaExer7(Request $request){
+
+        $valor1 = $request->valor1;
+               
+
+        $cel = ( $valor1 - 32) / 1.8 ;
+
+        return view('exer7', ['cel' => $cel]);
+    
+}
 
 
 
