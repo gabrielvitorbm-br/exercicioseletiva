@@ -193,7 +193,21 @@ public function abrirFormExer12(){
 
     }
 
+    public function abrirFormExer13(){
+        return view('exer13');
+    }
 
+    public function respostaExer13(Request $request){
+
+        $valor1 = $request->valor1;
+        
+               
+
+        $cen = $valor1 * 100 ;
+
+        return view('exer13', ['cen' => $cen]);
+    
+}
 
 
 
