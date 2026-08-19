@@ -254,6 +254,22 @@ public function abrirFormExer16(){
         return view('exer16', ['des' => $des]);
 
     }
+public function abrirFormExer17(){
+        return view('exer17');
+    }
+
+    public function respostaExer17(Request $request){
+
+        $valor1 = $request->valor1;
+        $valor2 = $request->valor2;
+        $valor3 = $request->valor3;
+        
+      
+        $tax = $valor1 * ($valor2 / 100) * $valor3;             
+
+        return view('exer17', ['tax' => $tax]);
+
+    }
 
 
 
