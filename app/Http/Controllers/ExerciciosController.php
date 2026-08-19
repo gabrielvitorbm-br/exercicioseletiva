@@ -193,7 +193,7 @@ public function abrirFormExer12(){
 
     }
 
-    public function abrirFormExer13(){
+public function abrirFormExer13(){
         return view('exer13');
     }
 
@@ -206,6 +206,22 @@ public function abrirFormExer12(){
         $cen = $valor1 * 100 ;
 
         return view('exer13', ['cen' => $cen]);
+    
+}
+
+ public function abrirFormExer14(){
+        return view('exer14');
+    }
+
+    public function respostaExer14(Request $request){
+
+        $valor1 = $request->valor1;
+        
+               
+
+        $mil = $valor1 / 1.609 ;
+
+        return view('exer14', ['mil' => $mil]);
     
 }
 
