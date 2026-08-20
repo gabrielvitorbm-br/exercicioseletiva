@@ -4,6 +4,7 @@
 
         <h1>exercicio 3 </h1>
         <form method="post" action="/exer3resp">
+            @csrf
             <div class="mb-3">
                 <label for="valor1" class="form-label">informe o primeiro valor</label>
                 <input type="number" id="valor1" name="valor1" class="form-control" required="">

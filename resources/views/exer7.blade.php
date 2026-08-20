@@ -4,7 +4,7 @@
 
         <h1>exercicio 7 </h1>
         <form method="post" action="/exer7resp">
-@csrf
+            @csrf
             <div class="mb-3">
                 <label for="valor1" class="form-label">informe o valor em fahrenheith </label>
                 <input type="number" step="any" id="valor1" name="valor1" class="form-control" required="">

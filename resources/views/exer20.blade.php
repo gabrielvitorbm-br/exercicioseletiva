@@ -4,6 +4,7 @@
 
         <h1>exercicio 20 </h1>
         <form method="post" action="/exer20resp">
+            @csrf
             <div class="mb-3">
                 <label for="valor1" class="form-label">informe a distancia</label>
                 <input type="number" step="any" id="valor1" name="valor1" class="form-control" required="">
